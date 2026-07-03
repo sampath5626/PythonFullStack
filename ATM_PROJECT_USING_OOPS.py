@@ -51,15 +51,17 @@ class ATM:
 
     def deposit_money(self):
         amount = int(input("Enter the amount to deposit: "))
+        if amount %100==0
 
-        if amount > 0:
-            self.user.balance += amount
-            self.user.transaction_history.append(f"Deposited: {amount}")
-            print("Money Deposited Successfully.")
-            print(f"Updated Balance: {self.user.balance}")
+            if amount > 0:
+                 self.user.balance += amount
+                self.user.transaction_history.append(f"Deposited: {amount}")
+                print("Money Deposited Successfully.")
+                print(f"Updated Balance: {self.user.balance}")
+            else:
+                print("Enter a valid amount.")
         else:
-            print("Enter a valid amount.")
-
+            print("change was not accepted to deposite")
     def mini_statement(self):
         print("\n----- MINI STATEMENT -----")
 
